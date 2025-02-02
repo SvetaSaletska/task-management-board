@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import express from 'express';
 
 const PORT = Number(env('PORT', '3000'));
