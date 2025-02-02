@@ -1,8 +1,7 @@
 import { Request, Response } from 'express';
-import { BoardsCollection } from '../models/board.ts';
-import { Card } from '../models/card.model';
+import { Board } from '../db/models/bord';
 
-export const createBoard = async (req: Request, res: Response) => {
+export const createBoardController = async (req: Request, res: Response) => {
   try {
     const { name } = req.body;
     const board = new Board({
@@ -16,7 +15,7 @@ export const createBoard = async (req: Request, res: Response) => {
   }
 };
 
-export const getBoards = async (req: Request, res: Response) => {
+export const getAllBoardsController = async (req: Request, res: Response) => {
   try {
     const boards = await Board.find().populate(
       'columns.todo columns.inProgress columns.done',

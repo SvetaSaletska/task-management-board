@@ -1,5 +1,6 @@
 import express from 'express';
-
+import { createCardController, moveCardController } from '../controllers/card';
+import { ctrlWrapper } from '../utils/ctrlWrapper';
 const router = express.Router();
 // const jsonParser = express.json();
 
