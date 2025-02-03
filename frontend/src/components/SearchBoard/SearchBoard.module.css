@@ -1,0 +1,27 @@
+.filter {
+  display: flex;
+  width: 100%;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.searchBoard {
+  width: 500px;
+  height: 45px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.btn {
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4px;
+  border-radius: 5px;
+  margin-bottom: auto;
+  border: 1px solid gray;
+}
